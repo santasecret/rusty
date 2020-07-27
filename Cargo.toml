@@ -1,0 +1,15 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["Ameya Shenoy <shenoy.ameya@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "2.0.0"
+actix-rt = "1.1.1"
+env_logger = "0.7.1"
+serde = { version = "1.0", features = ["derive"] }
+listenfd = "0.3"
+
