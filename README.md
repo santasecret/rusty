@@ -12,7 +12,7 @@ This repository has been released under the [GNU Affero General Public License v
 
 ```
 rusty - a backend API template for rust actix-web projects
-Copyright (C) <2020>  <"Ameya Shenoy <shenoy.ameya@gmail.com>>
+Copyright (C) <2020>  <"Ameya Shenoy" <shenoy.ameya@gmail.com>>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
