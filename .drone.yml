@@ -47,20 +47,20 @@ trigger:
   branch:
   - master
 
----
+# ---
 
-kind: secret
-name: aws_access_key_id
-get:
-  path: drone-secrets
-  name: AWS_ACCESS_KEY_ID
+# kind: secret
+# name: aws_access_key_id
+# get:
+#   path: drone-secrets
+#   name: AWS_ACCESS_KEY_ID
 
----
+# ---
 
-kind: secret
-name: aws_secret_access_key
-get:
-  path: drone-secrets
-  name: AWS_SECRET_ACCESS_KEY
+# kind: secret
+# name: aws_secret_access_key
+# get:
+#   path: drone-secrets
+#   name: AWS_SECRET_ACCESS_KEY
 
 ...
