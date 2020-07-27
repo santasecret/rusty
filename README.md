@@ -3,6 +3,8 @@
 
 A sample backend API written in Rust.
 
+[![Build Status](https://drone.codingcoffee.me/api/badges/santasecret/rusty/status.svg)](https://drone.codingcoffee.me/santasecret/rusty)
+
 
 ## LICENSE
 
