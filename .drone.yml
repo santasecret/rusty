@@ -13,4 +13,7 @@ steps:
     RUST_TARGETS: x86_64-unknown-linux-musl
     PACKAGE_NAME: rusty
 
+trigger:
+  branch:
+  - master
 ...
