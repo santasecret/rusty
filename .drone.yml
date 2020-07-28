@@ -31,8 +31,10 @@ steps:
       from_secret: aws_access_key_id
     AWS_SECRET_ACCESS_KEY:
       from_secret: aws_secret_access_key
-  depends_on:
-  - build
+    S3_ENDPOINT_URL:
+      from_secret: s3_endpoint_url
+  # depends_on:
+  # - build
 
 volumes:
 - name: cache
