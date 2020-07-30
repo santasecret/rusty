@@ -19,6 +19,18 @@ steps:
     RUST_TARGETS: x86_64-unknown-linux-musl
     CARGO_TARGET_DIR: /cache
 
+# Haven't added any test per say; Just keeping it here as a sample
+- name: test
+  image: rust:1.45.0-alpine3.11
+  volumes:
+  - name: cache
+    path: /cache
+  commands:
+  - cargo test --verbose --target $RUST_TARGETS
+  environment:
+    RUST_TARGETS: x86_64-unknown-linux-musl
+    CARGO_TARGET_DIR: /cache
+
 - name: release
   image: codingcoffee/aws
   volumes:
@@ -35,6 +47,12 @@ steps:
       from_secret: s3_endpoint_url
   depends_on:
   - build
+
+# Don't have a deploy process pre say; Just keeping it here as a sample
+- name: deploy
+  image: bitnami/kubectl
+  commands:
+  - kubectl apply -f deployment.yaml # something along these lines if the repo has a `deployment.yaml` in the root of the directory
 
 volumes:
 - name: cache
